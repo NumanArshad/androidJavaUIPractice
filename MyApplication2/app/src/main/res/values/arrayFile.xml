@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languagesList">
+
+        <item>cpp</item>
+        <item>python</item>
+        <item>java</item>
+        <item>go</item>
+
+
+    </string-array>
+
+</resources>

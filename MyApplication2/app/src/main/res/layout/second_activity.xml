@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+
+    >
+<include layout="@layout/toolbar2nd_foractivity"
+    android:id="@+id/toolbarSec"
+    />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="haha"
+    android:layout_below="@id/toolbarSec"
+  android:id="@+id/btnSA"
+
+    />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkboxSec"
+        android:layout_alignStart="@id/btnSA"
+        android:layout_below="@id/btnSA"
+        android:text="checkbox text"
+        android:layout_marginTop="8dp"
+        />
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleBtnSec"
+        android:layout_below="@id/checkboxSec" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/toggleBtnSec"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="old"
+   android:layout_below="@id/checkboxSec"
+        android:layout_toRightOf="@id/toggleBtnSec"
+   android:layout_alignBaseline="@id/toggleBtnSec"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/secT" />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtViewSec"
+    android:layout_below="@id/toggleBtnSec"
+    android:layout_centerVertical="true"
+    android:hint="enter your name please" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGSec"
+    android:layout_below="@id/txtViewSec"
+    android:layout_centerHorizontal="true">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio1sec"
+        android:text="first radio" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio2sec"
+        android:text="second radio" />
+</RadioGroup>
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/spSecA"
+        android:layout_below="@id/radioGSec"
+        android:layout_alignEnd="@id/btnSA"
+        />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lstV"
+            android:layout_below="@id/spSecA"/>
+</RelativeLayout>
